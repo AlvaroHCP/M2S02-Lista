@@ -7,14 +7,14 @@ public class PessoaFisica {
     private boolean possuiFilhos;
 
 
-    public boolean isCpfValid(long numero){
-        return ("" + numero).length() == 11;
-    }
     public PessoaFisica(long numero){
         boolean initialize = isCpfValid(numero);
         this.cpf = initialize ? numero : 0;
     }
 
+    public boolean isCpfValid(long numero){
+        return ("" + numero).length() == 11;
+    }
 
     public String getNome() {
         return nome;
