@@ -1,7 +1,7 @@
 package exercicio1;
 
 public class Data {
-    int dia, mes, ano;
+    private int dia, mes, ano;
     public Data (int dia, int mes, int ano){
         if(dia >= 1 && dia <= 31){
             this.dia = dia;
@@ -39,7 +39,9 @@ public class Data {
     }
 
     public void exibirData(){
-        String dataCompleta = this.mes + "/" + this.dia + "/" + this.ano;
+        String dataCompleta = ((Integer.toString(this.mes).length() < 2) ?
+                "0"+this.mes : ""+this.mes) + "/" +
+                ((""+this.dia).length() < 2 ? "0"+this.dia : ""+this.dia) + "/" + this.ano;
         System.out.println(dataCompleta);
     }
 }
