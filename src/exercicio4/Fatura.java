@@ -12,6 +12,10 @@ public class Fatura {
         this.precoDoItem = Math.max(preco, 0.0);
     }
 
+    public double getValorFatura(){
+        return (this.quantidadeCompradaDoItem * this.precoDoItem);
+    }
+
     public String getNumeroDaFatura() {
         return numeroDaFatura;
     }
