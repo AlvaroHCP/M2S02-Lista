@@ -29,8 +29,11 @@ public class FrequenciaCardiaca {
     public int idadeEmAnos(String dataNascimento) {
         String[] idade = dataNascimento.split("/");
         System.out.println(idade[2]);
-        return 2023 - Integer.parseInt(idade[2]);
+        this.idade = 2023 - Integer.parseInt(idade[2]);
+        return this.idade;
     }
+
+
 
     public String getNome() {
         return nome;
