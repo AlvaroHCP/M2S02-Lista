@@ -9,8 +9,14 @@ public class Imc {
 
         calculaImc();
     }
+
+    public String getDados(){
+        return "Altura= " + this.altura + "\n" +
+                "Peso= " + this.peso;
+    }
     private double calculaImc(){
-        this.imc = (this.peso / Math.pow(this.altura, 2));
+        this.imc = Math.round((this.peso / Math.pow(this.altura, 2)) * 100) / 100.0;
+
         return this.imc;
     }
 

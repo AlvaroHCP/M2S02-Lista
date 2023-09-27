@@ -7,9 +7,10 @@ public class PerfilDeSaude {
 
     @Override
     public String toString() {
-        return "1- IMC= " + imc.getImc() + "\n" +
-                "2- Frequencia Máxima= " + frequenciaCardiaca.getFrequenciaCardiacaMaxima() + "\n" +
-                "3- Frequencia Alvo= " + frequenciaCardiaca.frequenciaCardiacaAlvo() + "\n";
+        return "\n" + frequenciaCardiaca.getDados() + "\n" +
+                imc.getDados() + "\n" + "Sexo= " + this.sexo + "\n" + "IMC= " + imc.getImc() + "\n" +
+                "Frequencia Cardíaca Máxima= " + frequenciaCardiaca.getFrequenciaCardiacaMaxima() + "\n" +
+                "Frequencia Cardíaca Alvo= " + frequenciaCardiaca.frequenciaCardiacaAlvo();
     }
 
     public PerfilDeSaude(String sexo, Imc imc, FrequenciaCardiaca frequenciaCardiaca){

@@ -24,6 +24,11 @@ public class FrequenciaCardiaca {
                 " - " + frequenciaCardiacaAlvo85 + ") bpm."
                 ;
     }
+    public String getDados(){
+        return  "Nome= " + nome + ' ' + sobrenome + "\n" +
+                "Data de nascimento= " + dataDeNascimento + "\n" +
+                "Idade= " + idade + " anos";
+    }
 
     public int idadeEmAnos(String dataNascimento) {
         String[] idade = dataNascimento.split("/");
