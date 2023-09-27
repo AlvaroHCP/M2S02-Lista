@@ -13,11 +13,25 @@ public class FrequenciaCardiaca {
         this.dataDeNascimento = dataNascimento;
     }
 
+    @Override
+    public String toString() {
+        return "FrequenciaCardiaca{" +
+                "nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", dataDeNascimento='" + dataDeNascimento + '\'' +
+                ", idade=" + idade +
+                ", frequenciaCardiacaMaxima=" + frequenciaCardiacaMaxima +
+                ", frequenciaCardiacaAlvo50=" + frequenciaCardiacaAlvo50 +
+                ", frequenciaCardiacaAlvo85=" + frequenciaCardiacaAlvo85 +
+                '}';
+    }
+
     public int idadeEmAnos(String dataNascimento) {
         String[] idade = dataNascimento.split("/");
         System.out.println(idade[2]);
         return 2023 - Integer.parseInt(idade[2]);
     }
+
     public String getNome() {
         return nome;
     }
