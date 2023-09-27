@@ -41,8 +41,7 @@ public class FrequenciaCardiaca {
     public String frequenciaCardiacaAlvo(){
         this.frequenciaCardiacaAlvo50 = (int) (0.5 * this.frequenciaCardiacaMaxima);
         this.frequenciaCardiacaAlvo85 = (int) (0.85 * this.frequenciaCardiacaMaxima);
-        return "Frequencia Cardíaca Alvo fica entre " + this.frequenciaCardiacaAlvo50 + " e " +
-                this.frequenciaCardiacaAlvo85 + ".";
+        return "(" + this.frequenciaCardiacaAlvo50 + " - " + this.frequenciaCardiacaAlvo85 + ")";
     }
 
     public void setNome(String nome) {
